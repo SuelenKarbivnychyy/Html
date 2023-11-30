@@ -6,83 +6,103 @@
         </title>
     </head>
     <body>
-        <h1>Order a Melongram</h1>
-        <p>
-            There's no better way to show a loved one you care than with a Melongram.
-        </p>
-        <p>
-            Each Melongram comes with a custom message printed on high-quality cardstock
-            and your choice of a hand-picked, premium melon.
-        </p>
+        <header>
+            <h1>Order a Melongram</h1>
+        </header>
+        
+        <section id="intro">
+            <p>
+                There's no better way to show a loved one you care than with a Melongram.
+            </p>
+            <p>
+                Each Melongram comes with a custom message printed on high-quality cardstock
+                and your choice of a hand-picked, premium melon.
+            </p>
+        </section>         
 
-        <h2>Melon Options</h2>
-        <p>Choose from one of these melons:</p>
+        <section id="melon-options">
+            <h2>Melon Options</h2>
+            <p>Choose from one of these melons:</p>
 
-        <table>
-            <tr>
-                <td>Watermelon</td> 
-                <td>$1,200.00</td>
-            </tr>
-            <tr>
-                <td>Canteloupe</td>
-                <td>$400.00</td>
-            </tr>
-            <tr>
-                <td>Honeydew</td>
-                <td>$1,750.00</td>
-            </tr>
-        </table>
+            <table>
+                <tr>
+                    <td>Watermelon</td> 
+                    <td>$1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Canteloupe</td>
+                    <td>$400.00</td>
+                </tr>
+                <tr>
+                    <td>Honeydew</td>
+                    <td>$1,750.00</td>
+                </tr>
+            </table>
+        </section>
 
-        <h2>Order Form</h2>
+        <section id="order-form">
+            <h2>Order Form</h2>
 
-        <form>
-            <label for="user-name">Your name</label>
-            <input type="text" name="name" is="user-name">
-        </form>
+            <form>
+                <div>
+                    <label for="user-name">Your name</label>
+                    <input type="text" name="name" id="user-name">
+                </div>
 
-        <form>
-            <label for="recipient-name">Who are we sending this to?</label>
-            <input type="text" name="recipient" is="recipient-name">
-        </form>
+                <div>
+                    <label for="recipient-name">Who are we sending this to?</label>
+                    <input type="text" name="recipient" id="recipient-name">
+                </div>
 
-        <form>
-            <label for="lang_select">Choose a melon</label>
+                <div>
+                    <fieldset>
+                        <legend>Choose a melon</legend>                
+                        <label for="lang_select"></label>
+                        <select name="melon" id="lang_select">
+                            <option value="watermelon">Watermelon</option>
+                            <option value="canteloupe">Canteloupe</option>
+                            <option value="honeydew">Honeydew</option>
+                        </select>
+                    </fieldset>
+                </div>   
 
-            <select name="melon" id="lang_select">
-                <option value="watermelon">Watermelon</option>
-                <option value="canteloupe">Canteloupe</option>
-                <option value="honeydew">Honeydew</option>
-            </select>
-        </form>
+                <div>
+                    <fieldset>
+                        <legend>When should we deliver?</legend>                
 
-        <form>
-            When should we deliver?
+                        <label for="mornind-delivery">Morning</label>
+                        <input type="radio" name="time" id="mornind-delivery" value="am">
 
-            <label for="mornind-delivery">Morning</label>
-            <input type="radio" name="time" id="mornind-delivery" value="am">
+                        <label for="evening-delivery">Evening</label>
+                        <input type="radio" name="time" id="evening-delivery" value="pm">
 
-            <label for="evening-delivery">Evening</label>
-            <input type="radio" name="time" id="evening-delivery" value="pm">
+                        <label for="any-time-delivery">Any time</label>
+                        <input type="radio" name="time" id="any-time-delivery" value="any">
+                    </fieldset>
+                </div>
 
-            <label for="any-time-delivery">Any time</label>
-            <input type="radio" name="time" id="any-time-delivery" value="any">
-        </form>
+                <div>
+                    <label for="text-message">Enter your message:</label>
+                    <textarea name="message" id="text-message"></textarea>
+                </div>
 
-        <form>
-            <label for="text-message">Enter your message:</label>
-            <textarea name="message" id="text-message"></textarea>
-        </form>
+                <fieldset>
+                    <legend>Subscribe to our newsletter:</legend>
+                        <div>                            
+                            <label for="news-subscribe">Yes</label>
+                            <input type="checkbox" value="Yes" id="news-subscribe" name="subscribe">     
+                        </div>                    
 
-        <form>
-            Subscribe to our newsletter:
-            <label for="news-subscribe">Yes</label>
-            <input type="checkbox" value="Yes" id="news-subscribe" name="subscribe">            
-        </form>
+                        <div>
+                            <label for="log-in"></label>
+                            <button type="submit" id="log-in">submit</button>
+                        </div>
+                </fieldset>        
+        </section>
 
-        <form>
-            <label for="log-in"></label>
-            <button type="submit" id="log-in">submit</button>
-        </form>
+        <footer>
+            <p>Author: Suelen Karb</p>
+        </footer>
 
     </body>
 
